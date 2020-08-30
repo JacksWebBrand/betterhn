@@ -1,7 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
-import pprint
 import json
+
+print(requests)
+print(BeautifulSoup)
+print(json)
 
 res = requests.get('https://news.ycombinator.com/news', timeout=10)
 res2 = requests.get('https://news.ycombinator.com/news?p=2', timeout=10)
@@ -32,8 +35,6 @@ def create_custom_hn(links, subtext):
             if points > 49:
                 hn.append({'title': title, 'link': href, 'votes': points})
     return sort_stories_by_votes(hn)
-
-# pprint.pprint(json.dumps(create_custom_hn(mega_links, mega_subtext)))
 
 with open('hn-data.js', mode='w') as myfile:
     text = myfile.write('const apple = ' + json.dumps(create_custom_hn(mega_links, mega_subtext)))

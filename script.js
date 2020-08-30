@@ -1,5 +1,3 @@
-console.log(apple)
-
 apple.forEach(item => {
     // Create Container
     const itemContainer = document.createElement('div');
