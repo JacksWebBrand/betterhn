@@ -17,4 +17,4 @@ apple.forEach(item => {
     // Create the element for rendering
     itemContainer.append(itemLink, itemVotes);
     document.body.append(itemContainer, hr);
-})
+});

@@ -2,10 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-print(requests)
-print(BeautifulSoup)
-print(json)
-
 res = requests.get('https://news.ycombinator.com/news', timeout=10)
 res2 = requests.get('https://news.ycombinator.com/news?p=2', timeout=10)
 
