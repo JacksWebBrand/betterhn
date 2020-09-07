@@ -32,7 +32,7 @@ apple.forEach(item => {
 const linkText = document.querySelectorAll('.item-link');
 
 function setDark() {
-    document.body.style.background = ('linear-gradient(to top, #232526, #414345)');
+    document.body.classList.replace('light-background', 'dark-background')
     titleContainer.classList.add('dark-title');
     secondaryText.classList.add('dark-secondary');
     fasIcon.children[0].classList.replace('fa-sun', 'fa-moon');
@@ -41,7 +41,7 @@ function setDark() {
 }
 
 function setLight() {
-    document.body.style.background = ('linear-gradient(to top, #FFFFFF, #ECE9E6)');
+    document.body.classList.replace('dark-background', 'light-background')
     titleContainer.classList.remove('dark-title');
     secondaryText.classList.remove('dark-secondary');
     fasIcon.children[0].classList.replace('fa-moon', 'fa-sun');
