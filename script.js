@@ -64,6 +64,7 @@ toggleSwitch.addEventListener('change', switchTheme);
 if (!isLoaded) {
     if (currentTheme === 'dark') {
         setDark();
+        toggleSwitch.checked = true;
         isLoaded = true;
     } else {
         setLight();
