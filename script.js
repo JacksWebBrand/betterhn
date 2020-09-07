@@ -60,7 +60,7 @@ function switchTheme(e) {
 // Event Listeners
 toggleSwitch.addEventListener('change', switchTheme);
 
-//On Load
+//On Load - check if user has chosen a theme (dark or light) before, and set accordingly
 if (!isLoaded) {
     if (currentTheme === 'dark') {
         setDark();
