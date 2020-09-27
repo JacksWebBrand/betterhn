@@ -1,7 +1,7 @@
 # betterhn
 Top Hacker News scraper and basic presenter
 
-https://jackswebbrand.github.io/betterhn/
+https://jacksbrand.github.io/betterhn/
 
 Scrapes Hacker News for articles with over 50 votes on the first two pages and displays them with links to the main articles.
 
